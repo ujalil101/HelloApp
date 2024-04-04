@@ -40,12 +40,12 @@ const TicTacToe = () => {
         }
     };
     const handleClick = (num)  => {
-        if (cells[num] != "" ){
+        if (cells[num] !=="" ){
             alert("already clicked");
             return;
         }
         let squares = [...cells];
-        if (turn == 'x') {
+        if (turn === 'x') {
             squares[num] = "x";
             setTurn('o');
             
@@ -73,6 +73,7 @@ const TicTacToe = () => {
 
     return (
     <div className="container">
+        <h1 className = "Title">Welcome to UZI's TICTACTOE</h1>
         <table>
             Turn: {turn}
             <tbody>
